@@ -4,9 +4,19 @@
     margin-right: auto;
     width:50%;
 }
-div {
+.jason {
+    display: table;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url('../images/oil-grass_background.jpg');
-    height: 500px;
+    background-size: cover;
+
+}
+
+#background_picture {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    left: 0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
 }
