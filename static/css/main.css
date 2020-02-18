@@ -1,0 +1,12 @@
+.center {
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%;
+}
+div {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/oil-grass_background.jpg');
+    height: 500px;
+}
