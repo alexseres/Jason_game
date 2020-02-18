@@ -14,5 +14,20 @@ section
 }
 
 #jason-header {
-    color: red;
+    margin-left: 120px;
+    margin-right: 1020px;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: grey;
+    color: darkred;
+}
+
+#stickman {
+    margin-top: 100px;
+    margin-left: 300px;
+   }
+
+#jason {
+    margin-left: 550px;
+    margin-top: -40px;
 }

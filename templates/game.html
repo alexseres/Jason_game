@@ -6,14 +6,17 @@
     <link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
 </head>
 <body>
+
 <section>
     <div id="jason-header">Jason Kill</div>
+    <div id="jason"> <img src="static/images/jason.png"></div>
+    <div id="stickman"> <img src="/static/images/stickman2.png"> </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
         $(function () {
             var move = 0;
             setInterval(function () {
-                move-=1;
+                move+=1;
                 $('section').css ('background-position-y', move + '%');
             }, 50)
         })
