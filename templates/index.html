@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Start</title>
-</head>
+<html>
+<style>
+    #target {
+        width: 10%;
+        height: 5%;
+        transform: rotate(90deg);
+        position: absolute;
+    }
+    #target img {
+        width: 100%;
+        height: auto;
+    }
+</style>
 <body>
-<form action="/game" method="GET">
-    <button class ="go-to-game" type="submit">Lets go</button>
-</form>
+    <div id ="target"><img src="static/images/survivor-move_flashlight_0.png"> </div>
+<script>
+    function myMove() {
+        let elem = document.getElementById("target");
+        let pos = 0;
+        let id = setInterval(frame, 10);
+        function frame() {
+            if (pos === 650) {
+                clearInterval(id);
+                elem.style.top = '0px';
+                myMove()
+            } else {
+                pos++;
+                elem.style.top = pos + 'px';
+            }
+        }
+    }
+    myMove()
+</script>
+
 </body>
 </html>

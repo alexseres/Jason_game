@@ -16,3 +16,14 @@ section
 #jason-header {
     color: red;
 }
+
+#target {
+    width: 10%;
+    height: 5%;
+    transform: rotate(90deg);
+    position: absolute;
+}
+#target img {
+    width: 100%;
+    height: auto;
+}
