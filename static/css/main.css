@@ -11,6 +11,15 @@
 
 }
 
+#jason_image {
+    width: 6%;
+    height: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative
+}
+
 #background_picture {
     width: 75%;
     height: 75%;
