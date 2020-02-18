@@ -6,10 +6,19 @@
     <link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
 </head>
 <body>
-<h1 align="center">Jason Kill</h1>
-
-<div id="game-container" class="jason"><img src="../static/images/oil-grass_background.jpg" id="background_picture">
-</div>
+<section>
+    <div id="jason-header">Jason Kill</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var move = 0;
+            setInterval(function () {
+                move-=1;
+                $('section').css ('background-position-y', move + '%');
+            }, 50)
+        })
+    </script>
+</section>
 
 </body>
 </html>
