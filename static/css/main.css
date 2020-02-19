@@ -10,7 +10,6 @@ section
     height: 100vh;
     background: url('/static/images/grass_14.png');
     background-size: 100%;
-
 }
 
 #jason-header {
@@ -22,12 +21,63 @@ section
     color: darkred;
 }
 
-#stickman {
-    margin-top: 100px;
-    margin-left: 300px;
-   }
-
 #jason {
     margin-left: 550px;
+    margin-top:  -40px;
+    position: fixed;
+    visibility: hidden;
+}
+
+#jason-without-machete {
+    margin-left: 550px;
     margin-top: -40px;
+    position: fixed;
+    visibility: hidden;
+}
+
+#machete-left {
+    margin-left: 580px;
+    margin-top: 20px;
+    position: fixed;
+    visibility: visible;
+}
+
+#machete-right {
+    margin-left: 610px;
+    margin-top: 20px;
+    position: fixed;
+    visibility: visible;
+}
+
+.targetLeft1 {
+    margin-left: 15%;
+    width: 10%;
+    height: 5%;
+    position: absolute;
+}
+
+.targetLeft2 {
+    margin-left: 30%;
+    width: 10%;
+    height: 5%;
+    position: absolute;
+}
+
+.targetRight1 {
+    margin-left: 75%;
+    width: 10%;
+    height: 5%;
+    position: absolute;
+}
+
+.targetRight2 {
+    margin-left: 60%;
+    width: 10%;
+    height: 5%;
+    position: absolute;
+}
+
+#target img {
+    width: 65%;
+    height: auto;
 }
