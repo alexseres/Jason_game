@@ -33,9 +33,9 @@ function keypress(event) {
         var macheteRight = document.getElementById("machete-right");
         var pos = 0;
         let pos2 = 0;
-        var id_left = setInterval(frame, 5);
+        var id_left = setInterval(frameLeft, 5);
 
-        function frame() {
+        function frameLeft() {
             if (pos > 400) {
                 clearInterval(id_left);
                 macheteLeft.style.top = '0px'
@@ -55,9 +55,9 @@ function keypress(event) {
         var macheteRight = document.getElementById("machete-right");
         var pos = 0;
         let pos2 = 0;
-        var id_right = setInterval(frame, 5);
+        var id_right = setInterval(frameRight, 5);
 
-        function frame() {
+        function frameRight() {
             if (pos > 400) {
                 clearInterval(id_right);
                 macheteRight.style.top = '0px'
