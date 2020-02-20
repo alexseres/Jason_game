@@ -23,6 +23,7 @@ let KEY_LEFT = 37;
 let KEY_RIGHT = 39;
 
 document.addEventListener('keydown', keypress, false);
+document.addEventListener('keydown', switchPics, false);
 
 function keypress(event) {
 
@@ -38,7 +39,7 @@ function keypress(event) {
         var jason_nm = setInterval(jasonNoMachete,5);
 
         function frameLeft() {
-            if (pos > 400) {
+            if (pos === 600) {
                 clearInterval(id_left);
                 macheteLeft.style.top = '40px'
                 macheteLeft.style.left = '5px'
@@ -61,7 +62,7 @@ function keypress(event) {
         var id_right = setInterval(frameRight, 5);
 
         function frameRight() {
-            if (pos > 400) {
+            if (pos === 600) {
                 clearInterval(id_right);
                 macheteRight.style.top = '40px'
                 macheteRight.style.left = "0px"
@@ -75,4 +76,6 @@ function keypress(event) {
         }
     }
 }
+
+
 
