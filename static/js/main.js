@@ -8,7 +8,7 @@ function myMove() {
             clearInterval(id);
             elem.style.top = '0px';
             document.getElementById("target").className =
-                targetList[Math.floor(Math.random() * (4 - 0 + 1)) + 0];
+                targetList[Math.floor(Math.random() * (3 - 0 + 1)) + 0];
             myMove()
         } else {
             pos += 0.2;
@@ -16,4 +16,21 @@ function myMove() {
         }
     }
 }
+
+function timer() {
+    let myTime = 2000;
+    let stillRunning = setInterval(function(){
+        myTime--;
+        document.getElementById("timer").innerHTML =
+            Math.floor(myTime/1000) + "," +
+            Math.floor(myTime/10 - (Math.floor(myTime/1000)* 100)) + "S";
+        if (myTime === 0) {
+            clearInterval(stillRunning);
+            window.location.href = '/loss';
+        }
+        }, 1);
+}
+
+
+timer()
 myMove();

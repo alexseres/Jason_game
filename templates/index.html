@@ -1,36 +1,18 @@
 <!DOCTYPE html>
 <html>
-<style>
-    #target {
-        width: 10%;
-        height: 5%;
-        transform: rotate(90deg);
-        position: absolute;
-    }
-    #target img {
-        width: 100%;
-        height: auto;
-    }
-</style>
 <body>
-    <div id ="target"><img src="static/images/survivor-move_flashlight_0.png"> </div>
+<div id="timer" ></div>
 <script>
-    function myMove() {
-        let elem = document.getElementById("target");
-        let pos = 0;
-        let id = setInterval(frame, 10);
-        function frame() {
-            if (pos === 650) {
-                clearInterval(id);
-                elem.style.top = '0px';
-                myMove()
-            } else {
-                pos++;
-                elem.style.top = pos + 'px';
-            }
-        }
+    function timer() {
+        let myTime = 60000;
+        setInterval(function(){
+            myTime--;
+            document.getElementById("timer").innerHTML =
+                Math.floor(myTime/1000) + "," +
+                Math.floor(myTime/10 - (Math.floor(myTime/1000)* 100)) + "S";
+        }, 1);
     }
-    myMove()
+    timer()
 </script>
 
 </body>

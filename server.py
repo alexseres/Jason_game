@@ -12,5 +12,10 @@ def game():
     return render_template('game.html')
 
 
+@app.route('/loss')
+def loss():
+    return render_template('/game over.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
