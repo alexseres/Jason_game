@@ -25,7 +25,7 @@ section
     margin-left: 550px;
     margin-top:  -40px;
     position: fixed;
-    visibility: hidden;
+    visibility: visible;
 }
 
 #jason-without-machete {
@@ -37,16 +37,16 @@ section
 
 #machete-left {
     margin-left: 580px;
-    margin-top: 20px;
+    margin-top: 30px;
     position: fixed;
-    visibility: visible;
+    visibility: hidden;
 }
 
 #machete-right {
     margin-left: 610px;
-    margin-top: 20px;
+    margin-top: 60px;
     position: fixed;
-    visibility: visible;
+    visibility: hidden;
 }
 
 .targetLeft1 {

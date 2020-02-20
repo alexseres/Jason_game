@@ -77,5 +77,49 @@ function keypress(event) {
     }
 }
 
+function switchPics(e) {
+    if (e.keyCode === KEY_LEFT) {
+        var jason = document.getElementById("jason");
+        var jasonWithoutMachete = document.getElementById("jason-without-machete");
+        var macheteLeft = document.getElementById("machete-left");
+        var macheteRight = document.getElementById("machete-right");
+        let jHide = setTimeout(hideJ, 0);
+        let jShow = setTimeout(showJ, 1000);
 
+        function hideJ() {
+            jason.style.visibility = "hidden";
+            jasonWithoutMachete.style.visibility = "visible";
+            macheteLeft.style.visibility = "visible";
+            macheteRight.style.visibility = "hidden";
+        }
 
+        function showJ() {
+            jason.style.visibility = "visible";
+            jasonWithoutMachete.style.visibility = "hidden";
+            macheteLeft.style.visibility = "hidden";
+            macheteRight.style.visibility = "hidden";
+        }
+    }
+    if (e.keyCode === KEY_RIGHT) {
+        var jason = document.getElementById("jason");
+        var jasonWithoutMachete = document.getElementById("jason-without-machete");
+        var macheteLeft = document.getElementById("machete-left");
+        var macheteRight = document.getElementById("machete-right");
+        let jHide = setTimeout(hideJ, 0);
+        let jShow = setTimeout(showJ, 1000);
+
+        function hideJ() {
+            jason.style.visibility = "hidden";
+            jasonWithoutMachete.style.visibility = "visible";
+            macheteLeft.style.visibility = "hidden";
+            macheteRight.style.visibility = "visible";
+        }
+
+        function showJ() {
+            jason.style.visibility = "visible";
+            jasonWithoutMachete.style.visibility = "hidden";
+            macheteLeft.style.visibility = "hidden";
+            macheteRight.style.visibility = "hidden";
+        }
+    }
+}
