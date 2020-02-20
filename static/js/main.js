@@ -62,7 +62,7 @@ function keypress(event) {
         var jason = document.getElementById("jason");
         var jasonWithoutMachete = document.getElementById("jason-without-machete");
         var macheteRight = document.getElementById("machete-right");
-         var knifeSound = document.getElementById("knife-sound");
+        var knifeSound = document.getElementById("knife-sound");
         var pos = 0;
         let pos2 = 0;
         var id_right = setInterval(frameRight, 5);
@@ -72,14 +72,14 @@ function keypress(event) {
             knifeSound.volume = 0.2;
             if (pos === 600) {
                 clearInterval(id_right);
-                macheteRight.style.top = '40px'
-                macheteRight.style.left = "0px"
+                macheteRight.style.top = '40px';
+                macheteRight.style.left = "0px";
             } else {
                 pos += 3;
                 pos2 += 3.8;
                 macheteRight.style.top = pos + 'px';
                 macheteRight.style.left = pos2 + "px";
-                console.log(pos)
+                console.log(pos);
             }
         }
     }
