@@ -44,7 +44,7 @@ function keypress(event) {
                 macheteLeft.style.left = '5px'
             } else {
                 pos += 3;
-                pos2 -= 3;
+                pos2 -= 3.8;
                 macheteLeft.style.top = pos + 'px';
                 macheteLeft.style.left = pos2 + "px";
                 console.log(pos)
@@ -67,7 +67,7 @@ function keypress(event) {
                 macheteRight.style.left = "0px"
             } else {
                 pos += 3;
-                pos2 += 3;
+                pos2 += 3.8;
                 macheteRight.style.top = pos + 'px';
                 macheteRight.style.left = pos2 + "px";
                 console.log(pos)
