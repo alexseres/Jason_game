@@ -33,17 +33,20 @@ function keypress(event) {
         var macheteRight = document.getElementById("machete-right");
         var pos = 0;
         let pos2 = 0;
-        var id_left = setInterval(frameLeft, 5);
+        var id_left = setInterval(frameLeft,5);
+        var jason_m = setInterval(jasonMachete,5);
+        var jason_nm = setInterval(jasonNoMachete,5);
 
         function frameLeft() {
             if (pos > 400) {
                 clearInterval(id_left);
-                macheteLeft.style.top = '0px'
+                macheteLeft.style.top = '40px'
+                macheteLeft.style.left = '5px'
             } else {
                 pos += 3;
-                pos2 += 0.3;
+                pos2 -= 3;
                 macheteLeft.style.top = pos + 'px';
-                macheteLeft.style.bottom = pos2 + "px";
+                macheteLeft.style.left = pos2 + "px";
                 console.log(pos)
             }
         }
@@ -60,12 +63,13 @@ function keypress(event) {
         function frameRight() {
             if (pos > 400) {
                 clearInterval(id_right);
-                macheteRight.style.top = '0px'
+                macheteRight.style.top = '40px'
+                macheteRight.style.left = "0px"
             } else {
                 pos += 3;
-                pos2 += 0.3;
+                pos2 += 3;
                 macheteRight.style.top = pos + 'px';
-                macheteRight.style.bottom = pos2 + "px";
+                macheteRight.style.left = pos2 + "px";
                 console.log(pos)
             }
         }
