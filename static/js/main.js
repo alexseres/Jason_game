@@ -18,7 +18,6 @@ function myMove() {
 }
 myMove();
 
-
 let KEY_LEFT = 37;
 let KEY_RIGHT = 39;
 
@@ -45,8 +44,8 @@ function keypress(event) {
             knifeSound.volume = 0.2;
             if (pos === 600) {
                 clearInterval(id_left);
-                macheteLeft.style.top = '40px'
-                macheteLeft.style.left = '5px'
+                macheteLeft.style.top = '40px';
+                macheteLeft.style.left = '5px';
             } else {
                 pos += 3;
                 pos2 -= 3.8;
