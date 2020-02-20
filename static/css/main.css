@@ -13,14 +13,17 @@ section
     background-size: 100%;
 }
 
-h1{margin-left: 40%;
+h1
+{
+    margin-left: 40%;
     font-weight: bold;
-  font-size: 300%;
+    font-size: 300%;
     color: red;
-
-
 }
-img{position:absolute;
+
+#index-image
+{
+    position:absolute;
     margin-left: 10%;
     width:80%;
     height: auto;
@@ -66,14 +69,14 @@ img{position:absolute;
 
 #jason {
     margin-left: 550px;
-    margin-top:  -40px;
+    margin-top:  0px;
     position: fixed;
     visibility: visible;
 }
 
 #jason-without-machete {
     margin-left: 550px;
-    margin-top: -40px;
+    margin-top: 0px;
     position: fixed;
     visibility: hidden;
 }
@@ -100,7 +103,7 @@ img{position:absolute;
 }
 
 .target img {
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 

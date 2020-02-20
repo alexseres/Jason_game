@@ -10,6 +10,7 @@ function targets(){
     return pick
 }
 
+
 function myMove() {
     let picked = targets();
     let elem = document.getElementById(picked);
@@ -26,7 +27,7 @@ function myMove() {
         }
     }
 }
-
+myMove();
 
 function timer() {
     let myTime = 999999999;
@@ -41,10 +42,8 @@ function timer() {
         }
         }, 1);
 }
-
-
 timer();
-myMove();
+
 
 let KEY_LEFT = 37;
 let KEY_RIGHT = 39;
