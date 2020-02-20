@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <title>Jason Game</title>
     <link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+    <script>machete.init('main.js')</script>
 </head>
 <body>
 <h1 align="center">Jason Kill</h1>
 
 <div id="game-container" class="jason_game">
     <img src="../static/images/oil-grass_background.jpg" id="background_picture">
-    <img src="../static/images/jason_mask.png" id="jason_image"></img>
+    <img src="../static/images/jason_mask.png" id="jason_image">
 </div>
+
+<div id="machete"><img src="../static/images/machete.png" id="machete" onkeydown="shoot(event)"></div>
 
 </body>
 </html>
