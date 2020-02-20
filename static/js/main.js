@@ -32,13 +32,17 @@ function keypress(event) {
         var jason = document.getElementById("jason");
         var jasonWithoutMachete = document.getElementById("jason-without-machete");
         var macheteRight = document.getElementById("machete-right");
+        var knifeSound = document.getElementById("knife-sound");
         var pos = 0;
         let pos2 = 0;
         var id_left = setInterval(frameLeft,5);
         var jason_m = setInterval(jasonMachete,5);
         var jason_nm = setInterval(jasonNoMachete,5);
 
+
         function frameLeft() {
+            knifeSound.play();
+            knifeSound.volume = 0.2;
             if (pos === 600) {
                 clearInterval(id_left);
                 macheteLeft.style.top = '40px'
@@ -50,6 +54,7 @@ function keypress(event) {
                 macheteLeft.style.left = pos2 + "px";
                 console.log(pos)
             }
+
         }
     }
     else if (event.keyCode === KEY_RIGHT) {
@@ -57,11 +62,14 @@ function keypress(event) {
         var jason = document.getElementById("jason");
         var jasonWithoutMachete = document.getElementById("jason-without-machete");
         var macheteRight = document.getElementById("machete-right");
+         var knifeSound = document.getElementById("knife-sound");
         var pos = 0;
         let pos2 = 0;
         var id_right = setInterval(frameRight, 5);
 
         function frameRight() {
+            knifeSound.play();
+            knifeSound.volume = 0.2;
             if (pos === 600) {
                 clearInterval(id_right);
                 macheteRight.style.top = '40px'
